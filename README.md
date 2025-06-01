@@ -18,3 +18,31 @@
 - [x] The test runs successfully.
 - [x] No code duplication.
 - [x] The code should avoid common anti-patterns such as hard-coded values, over-complicated logic, or inefficient structures.
+
+## ⚠️ Configuration & Sensitive Data
+
+**Do not commit your real credentials or sensitive data to the repository!**
+
+This project uses a `config.properties` file for local configuration (Appium path, email, password, etc).  
+This file is ignored by git and should **not** be committed.
+
+### How to Set Up Your Local Config
+
+1. **Copy the example file:**
+    ```sh
+    cp src/main/resources/config.properties.example src/main/resources/config.properties
+    ```
+2. **Edit `src/main/resources/config.properties`** and fill in your real values:
+    ```
+    app.path=/path/to/Nebula.apk
+    email=your@email.com
+    password=yourpassword
+    ```
+
+3. **Never commit your real `config.properties`!**  
+   It is already listed in `.gitignore` for your safety.
+
+---
+
+**If you accidentally committed sensitive data, remove it from git history before pushing.  
+See [Removing sensitive data from a repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) for help.**
