@@ -2,7 +2,7 @@
 - #### To run the project use an emulator or real device
 - Download the project
 - Configure config.properties file with appropriate values
-- BaseTest.class already configured to use Appium
+- mobile.BaseTest.class already configured to use Appium
 - Install Appium 2.0, then install uiautomator2 driver
   - `appium driver install uiautomator2`
 
